@@ -1,17 +1,7 @@
 public class Circle extends Shape {
     private double radius;
 
-    @Override
-    double getArea() {
 
-        return 0;
-    }
-
-    @Override
-    double getPerimeter() {
-
-        return 0;
-    }
 
     Circle(){
        this.radius=1.0;
@@ -34,5 +24,17 @@ public class Circle extends Shape {
     public void setRadius(double radius) {
 
         this.radius = radius;
+    }
+
+    @Override
+    double getArea() {
+
+        return 0;
+    }
+
+    @Override
+    double getPerimeter() {
+
+        return 0;
     }
 }
