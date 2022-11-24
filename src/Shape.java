@@ -8,25 +8,30 @@ abstract class Shape {
 
 
     Shape (){
-
+        this.color="red";
+        this.isFilled= true;
     }
     Shape(String color , boolean isFilled){
-
+        this.color= color;
+        this.isFilled= isFilled;
     }
     public String getColor(){
-      return color;
-}
+
+        return color;
+    }
 
     public void setColor(String color){
-        this.color="red";
-}
+        this.color=color;
+    }
 
     public boolean isFilled(){
+
         return isFilled;
-}
-    public void setisFilled(boolean isFilled){
-        this.isFilled=true;
-}
+    }
+    public void setIsFilled(boolean isFilled){
+
+        this.isFilled=isFilled;
+    }
     abstract double getArea();
     abstract double getPerimeter();
 
