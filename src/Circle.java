@@ -2,7 +2,6 @@ public class Circle extends Shape {
     private double radius;
 
     Circle(){
-
         this.radius=1.0;
     }
     Circle(double radius){
@@ -16,7 +15,6 @@ public class Circle extends Shape {
     }
 
     public double getRadius() {
-
         return radius;
     }
 

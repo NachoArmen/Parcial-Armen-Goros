@@ -4,7 +4,7 @@ public class Main {
 
       Square cuadrado= new Square(2,"green",false);
       Shape cuadradin= new Square();
-      Shape circulo= new Circle(1.0,"yellow",true);
+      Circle circulo= new Circle(1.0,"yellow",true);
       Rectangle rectangulo= new Rectangle(1.0,2.0,"red",false);
 
         cuadradin.setColor("purple");
@@ -13,13 +13,14 @@ public class Main {
 
 
 
-         System.out.println(String.format("Color: %s \n "));
 
-         System.out.println(String.format(""));
+         System.out.println(String.format("Cuadrado\n Color: %s \n Lado: %f \n Relleno: %b", cuadrado.getColor(), cuadrado.getWidth(),cuadrado.isFilled()));
 
-         System.out.println(String.format(""));
+         System.out.println(String.format("Cuadradin \n Color: %s \n Relleno: %b", cuadradin.getColor(), cuadradin.isFilled()));
 
-         System.out.println(String.format("Color: %s \n Ancho: %f \n Largo: %f \n Area: %f \n Perimetro: %f \n Relleno: %b",
+         System.out.println(String.format("Circulo \n Color: %s \n Radio: %f \n Area: %f \n Perimetro: %f \n Relleno: %b", circulo.getColor(), circulo.getRadius(),circulo.getArea(), circulo.getPerimeter(), circulo.isFilled()));
+
+         System.out.println(String.format("Rectangulo \n Color: %s \n Ancho: %f \n Largo: %f \n Area: %f \n Perimetro: %f \n Relleno: %b",
                  rectangulo.getColor(),rectangulo.getWidth(),rectangulo.getLength(),rectangulo.getArea(),rectangulo.getPerimeter(),rectangulo.isFilled()));
 
 
