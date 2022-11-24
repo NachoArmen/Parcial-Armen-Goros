@@ -1,10 +1,18 @@
 public class Rectangle extends Shape {
 
    public double width;
-   public double length;
 
+    public double getLength() {
+        return length;
+    }
 
-   Rectangle(){
+    public void setLength(double length) {
+        this.length = length;
+    }
+
+    public double length;
+
+    Rectangle(){
     this.width=1.0;
     this.length=1.0;
 
@@ -21,6 +29,15 @@ public class Rectangle extends Shape {
        this.color=color;
        this.isFilled=isFilled;
    }
+
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
 
     @Override
     double getArea() {
