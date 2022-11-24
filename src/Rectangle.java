@@ -22,28 +22,34 @@ public class Rectangle extends Shape {
    }
 
     public double getWidth() {
+
         return width;
     }
 
     public void setWidth(double width) {
+
         this.width = width;
     }
 
     public double getLength() {
+
         return length;
     }
 
     public void setLength(double length) {
+
         this.length = length;
     }
 
     @Override
     double getArea() {
-        return 0;
+
+        return (width*length);
     }
 
     @Override
     double getPerimeter() {
-        return 0;
+
+        return ((width*2)+(length*2));
     }
 }

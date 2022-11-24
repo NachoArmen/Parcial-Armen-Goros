@@ -3,7 +3,6 @@ abstract class Shape {
     public boolean isFilled;
     public double area;
     public double perimeter;
-    public String text;
 
 
 
